@@ -1,5 +1,5 @@
 ---
- dest:
+dest:
  - בוסטון
  - תל אביב
  - מינכן
@@ -15,33 +15,23 @@
  - נאפולי
  - רומא
  - ברצלונה
- srp:
- - price : 1234
-   dest  : בוסטון
-   carrier : ישראייר
- - price : 2345
-   dest  : בוסטון
-   carrier : ישראייר
- - price   : 3456
-   dest    : בוסטון
-   carrier : ישראייר
- - price   :4321
-   dest    : בוסטון
-   carrier : ישראייר
- - price   : 2323
-   dest  : בוסטון
-   carrier : ישראייר
- - price : 1231
-   dest : בוסטון
-   carrier : ישראייר
+srp:
+ - price           : 213
+   dest-city       : ny ny 
+   dest-country    : usa
+   carrier         : elal
+   orig-city       : tlv
+   orig-country    : il
 ---
 {{> header }}
 {{> orbit  }}
 <br>
+{{#repeat 12}}
+
 {{#each srp}}
-<div class="row">
+<div class="row" id="row-{{@index}}">
   {{> flight-search-results }}
   <br>
 </div>
-{{/each}}
+{{/each}}{{/repeat}}
 {{> footer }}

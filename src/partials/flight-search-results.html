@@ -1,4 +1,4 @@
-<div class="callout row">
+<div class="callout row" dir="rtl">
   <div class="large-8 columns">
     <div class="row" id="cal0">
       <a href="airline.html?airline={{@carrier}}">
@@ -7,17 +7,17 @@
          </i>{{carrier}}</h5>
         </div>
       </a>
-      <div class="small-4 columns" id="cel2_0">בוסטון | ארצות הברית</div>
+      <div class="small-4 columns" id="cel2_0">{{orig-city}} | {{orig-country}}</div>
       <div class="small-2 columns" id="cel3_0"><i class="fi-arrow-left"></i>
       </div>
-      <div class="small-6 columns" id="cel4_0">תל אביב | ישראל</div>
+      <div class="small-6 columns" id="cel4_0">{{dest-city}} | {{dest-country}}</div>
       <div class="small-6 columns tiny-text" id="cel5_0"> - 03:30</div>
       <div class="small-6 columns tiny-text" id="cel6_0"> - 03:30</div>
       <hr>
-      <div class="small-4 columns" id="cel7_0">תל אביב | ישראל</div>
+      <div class="small-4 columns" id="cel7_0">{{dest-city}} | {{dest-country}}</div>
       <div class="small-2 columns" id="cel8_0"><i class="fi-arrow-left"></i>
       </div>
-      <div class="small-6 columns" id="cel9_0">בוסטון | ארצות הברית</div>
+      <div class="small-6 columns" id="cel9_0">{{orig-city}} | {{orig-country}}</div>
       <div class="small-6 columns tiny-text" id="cel10_0">31-07-2017 - 03:30</div>
       <div class="small-6 columns tiny-text" id="cel11_0">31-07-2017 - 03:30</div>
     </div>
@@ -30,7 +30,7 @@
         <h5>${{price}}</h5>
       </div>
       <div class="small-12 column">
-        <a class="button float-left" id="cel5_0" href="purchase_1.html?airline=ישראייר&amp;price=163&amp;sdate=&amp;edate=31-07-2017&amp;dest=תל אביב | ישראל&amp;origin=בוסטון | ארצות הברית&amp;Adults=1&amp;Children=0&amp;Young=0&amp;Babies=0  ">המשך</a></div>
+        <a class="button float-left" id="cel5_0" href="purchase_1.html?airline={{carrier}}&amp;price=163&amp;sdate=&amp;edate=31-07-2017&amp;dest=תל אביב | ישראל&amp;origin=בוסטון | ארצות הברית&amp;Adults=1&amp;Children=0&amp;Young=0&amp;Babies=0  ">המשך</a></div>
     </div>
   </div>
 </div>
