@@ -12,14 +12,14 @@
         <div class="row">
           <div class="large-6 columns">
             <label>יציאה מ:
-                   <select name="origen">
+                   <select name="origen" bind="origen">
                      {{#each dest}}<option value="{{this}}">{{this}}</option>{{/each}}
                   </select>
                 </label>
           </div>
           <div class="large-6 columns">
             <label>נחיתה ב:
-                   <select name="destination">
+                   <select name="destination" bind="destination">
                      {{#each dest}}<option value="{{this}}">{{this}}</option>{{/each}}
                   </select>                
                 </label>
@@ -29,34 +29,34 @@
         <div class="row">
           <div class="large-6 columns">
             <label>תאריך יציאה:
-                  <input type="date" name="etd">
+                  <input type="date" name="etd" bind="etd">
                 </label>
           </div>
           <div class="large-6 columns">
             <label>נחיתה ב:
-                  <input type="date" name="eta" >
+                  <input type="date" name="eta" bind="eta">
                 </label>
           </div>
         </div>
         <div class="row">
           <div class="large-2 columns">
             <label>מבוגר:
-                  <input type="number" value="1" name="adults">              
+                  <input type="number" value="1" name="adults" bind="adults">              
                 </label>
           </div>
           <div class="large-2 columns">
             <label>צעיר:
-                  <input type="number" value="0" name="young">              
+                  <input type="number" value="0" name="young" bind="young">              
                 </label>
           </div>
           <div class="large-2 columns">
             <label>ילד:
-                  <input type="number" value="0" name="children">              
+                  <input type="number" value="0" name="children" bind="children">              
                 </label>
           </div>
           <div class="large-2 columns">
             <label>תינוקות:
-                  <input type="number" value="0" name="infants">              
+                  <input type="number" value="0" name="infants" bind="infants">              
                 </label>
           </div>
         </div>
